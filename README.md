@@ -34,16 +34,22 @@ The solution employs a hybrid neural network architecture combining transformer 
 - **Precision:** 0.93 (disaster class), 0.90 (non-disaster class)
 - **Recall:** 0.86 (disaster class), 0.95 (non-disaster class)
 
-**Detailed Classification Performance:**
-          precision    recall  f1-score   support
+## Detailed Classification Report
 
-Class 0       0.90      0.95      0.93      4342
-Class 1       0.93      0.86      0.89      3271
+**Per-Class Performance Metrics:**
 
-accuracy                           0.91      7613
-macro avg 0.92 0.91 0.91 7613
-weighted avg 0.91 0.91 0.91 7613
+| Class | Precision | Recall | F1-Score | Support |
+|-------|-----------|--------|----------|---------|
+| 0 (Non-Disaster) | 0.90 | 0.95 | 0.93 | 4,342 |
+| 1 (Disaster) | 0.93 | 0.86 | 0.89 | 3,271 |
 
+**Aggregate Performance:**
+
+| Metric | Score | Support |
+|--------|-------|---------|
+| Accuracy | 0.91 | 7,613 |
+| Macro Average | 0.92 | 0.91 | 0.91 | 7,613 |
+| Weighted Average | 0.91 | 0.91 | 0.91 | 7,613 |
 
 ## Training Characteristics
 - **Training Efficiency:** 37-40ms per sample per epoch
